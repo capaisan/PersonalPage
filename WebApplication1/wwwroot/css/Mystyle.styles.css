@@ -1,0 +1,93 @@
+﻿header {
+    background-color: #3b4c46;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+    opacity: 0.9;
+    position: relative;
+    font-palette: light;
+    text-align:center;
+}
+nav {
+/*    background-image: url(../images/gradient.png);*/
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Sans Serif Collection", Times, serif;
+}
+
+body {
+    background-image: url('annie-spratt-pdyQ3Ox-UEU-unsplash.jpg');
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    position: relative;
+    font-family: "Sans Serif Collection", Times, serif;
+}
+
+/* Style the container element */
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #a6bdbd;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+div {
+    text-align: center;
+    font-family: "Sans Serif Collection", Times, serif;
+}
+
+table {
+    margin: 0 auto;
+}
+
+tr {
+    text-align: center;
+}
+td{
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Style the heading element */
+h1 {
+    text-align: center;
+    
+    position: relative;
+}
+
+/* Style the paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    position: relative;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    position: relative;
+}
+footer {
+    background-color: #3b4c46;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+    opacity: 0.75;
+    position: relative;
+    font-palette: light;
+    text-align: center;
+}

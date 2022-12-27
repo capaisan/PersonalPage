@@ -1,0 +1,87 @@
+﻿@page
+@model TylersWebPage.Pages.SuggestionsModel
+@{
+}
+<body>
+    <div class="container p-3">
+        <div class="row pt-4">
+            <div class="col-md-12">
+                <h1>Suggestions</h1>
+            </div>
+            <div class="col-md-12">
+                Make a suggestion on what you would like to see on the website.
+                </div<
+        </div>
+
+        <br /> <br />
+        <div class="align-self-lg-center">
+            <table border="1" cellpadding="25">
+                <thread>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                </thread>
+                <tbody>
+                    @foreach (var obj in Model.Suggestions)
+                    {
+                        <tr>
+                            <td>
+                                @obj.Name
+                            </td>
+                            <td>
+                                @obj.Description
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+    <div>
+        <table cellspacing="50">
+            <form method="post">
+                <input type="hidden" asp-for="Suggestions" />
+                <label for="Id"></label>
+                <tr colspan="20" rowspan="20">
+                    <td>
+                        <label for="Name">Name:</label>
+                        <select style="width:300px; height:30px; text-align:center" id="Name" name="Name" />
+                             @*  <option value="Tyler">Tyler</option> <-- Re-enable when there are no more names. Comment out the foreach loop below*@
+                                @foreach (var i in Model.Suggestions)
+                                {
+                            <option value="@i.Name">@i.Name</option>
+
+                                }
+                        </select>
+                    </td>
+                    <td>
+
+                        @foreach (var obj in Model.Suggestions)
+                        {
+                            <input type="checkbox" name="Id" value="@obj.Id" />
+                            @*                        <label for="Id">@obj.Id</label>    <---    for development use*@
+                        }
+                    </td>
+                    <td>
+                        <label for="Description">Description:</label>
+                        <input type="text" style="width:300px; grid-auto-flow:row; text-anchor:start; overflow-wrap:normal" name="Description" value="" />
+                    </td>
+                    <td>
+                        <label>&nbsp</label>
+                        <input type="submit" class="submit" value="Submit" />
+                                            @*<a asp-page="/Categories/Delete" class="btn btn-success">Edit</a>*@
+                    </td>
+                </tr>
+
+            </form>
+    </table>
+    </div>
+
+    
+</body>
