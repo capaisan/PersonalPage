@@ -50,24 +50,23 @@
             </table>
         </div>
     <div>
-        <table cellspacing="50">
+        <table cellspacing="50" style="text-align:left">
             <form method="post">
                 <input type="hidden" asp-for="Suggestions" />
                 <label for="Id"></label>
-                <tr colspan="20" rowspan="20">
+                
+                <tr style="text-align:left" center="20" rowspan="20">
                     <td>
                         <label for="Name">Name:</label>
                         <select style="width:300px; height:30px; text-align:center" id="Name" name="Name" />
-                             @*  <option value="Tyler">Tyler</option> <-- Re-enable when there are no more names. Comment out the foreach loop below*@
+                              @* <option value="Tyler">Tyler</option> <-- Re-enable when there are no more names. Comment out the foreach loop below*@
                                 @foreach (var i in Model.Suggestions)
                                 {
                             <option value="@i.Name">@i.Name</option>
-
                                 }
                         </select>
                     </td>
                     <td>
-
                         @foreach (var obj in Model.Suggestions)
                         {
                             <input type="checkbox" name="Id" value="@obj.Id" />
@@ -76,7 +75,7 @@
                     </td>
                     <td>
                         <label for="Description">Description:</label>
-                        <input type="text" style="width:300px; grid-auto-flow:row; text-anchor:start; overflow-wrap:normal" name="Description" value="" />
+                        <input type="text" style="width:300px; grid-auto-flow:row; text-anchor:start; overflow-wrap:normal; white-space: nowrap; overflow: hidden; text-overflow: clip;" name="Description" value="" />
                     </td>
                     <td>
                         <label>&nbsp</label>

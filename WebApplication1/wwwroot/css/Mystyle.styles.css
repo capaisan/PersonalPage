@@ -1,16 +1,17 @@
 ﻿header {
     background-color: #3b4c46;
-    color: #ffffff;
+    accent-color: auto;
+    color: white;
     margin: 0 auto;
     padding: 10px;
-    opacity: 0.9;
+    opacity: .90;
     position: relative;
-    font-palette: light;
-    text-align:center;
+    font-palette: dark;
+    text-align: center;
 }
 nav {
 /*    background-image: url(../images/gradient.png);*/
-    color: #ffffff;
+    color: white;
     padding: 10px;
     margin: 0 auto;
     font-size: 20px;
@@ -18,6 +19,7 @@ nav {
 }
 
 body {
+
     background-image: url('annie-spratt-pdyQ3Ox-UEU-unsplash.jpg');
     font-family: Arial, sans-serif;
     background-size: cover;
@@ -76,6 +78,14 @@ p {
     position: relative;
 }
 
+p.test1 {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
 img {
     width: 25%;
     height: 25%;
@@ -83,10 +93,10 @@ img {
 }
 footer {
     background-color: #3b4c46;
-    color: #ffffff;
+    color: snow;
     margin: 0 auto;
     padding: 10px;
-    opacity: 0.75;
+    opacity: 0.8;
     position: relative;
     font-palette: light;
     text-align: center;

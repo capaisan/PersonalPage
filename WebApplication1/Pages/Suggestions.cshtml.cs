@@ -37,16 +37,16 @@ namespace TylersWebPage.Pages
             return Redirect("/Suggestions");
         }
 
-        /* public IActionResult OnPost(int? id)
-         {
-             if (id == null)
-             {
-                 return NotFound();
-             }
-             var category = _db.Suggestion.Find(id);
-             _db.Suggestion.Remove(category);
-             _db.SaveChanges();
-             return Redirect("/Suggestions");
-         }*/
+       /* public IActionResult OnPost(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var category = _db.Suggestion.Find(id);
+            _db.Suggestion.Remove(category);
+            _db.SaveChanges();
+            return Redirect("/Suggestions");
+        }*/
     }
 }
