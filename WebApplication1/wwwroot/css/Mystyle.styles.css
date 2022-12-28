@@ -48,10 +48,10 @@ table {
 }
 
 tr {
-    text-align: center;
+    
 }
 td{
-    margin: 0 auto;
+    
 }
 
 .center {
@@ -87,8 +87,8 @@ p.test1 {
 }
 
 img {
-    width: 25%;
-    height: 25%;
+    width: 40%;
+    height: 40%;
     position: relative;
 }
 footer {
