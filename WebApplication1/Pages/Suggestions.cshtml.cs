@@ -28,7 +28,8 @@ namespace TylersWebPage.Pages
             var suggestion = new Suggestion()
             {
                 Name = Name,
-                Description = Description
+                Description = Description,
+                Date = DateTime.Now
             };
 
             _db.Suggestion.Add(suggestion);

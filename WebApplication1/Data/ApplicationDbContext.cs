@@ -12,7 +12,7 @@ namespace TylersWebPage.Data
         }
         public DbSet<Category> Category { get; set; }
         public DbSet<Suggestion> Suggestion { get; set; }
-        public DbSet<IdentityDbContext> Identities { get; set; }
+      /*  public DbSet<IdentityDbContext> Identities { get; set; }*/
         
     }
 }

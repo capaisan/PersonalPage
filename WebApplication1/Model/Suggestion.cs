@@ -10,5 +10,6 @@ namespace TylersWebPage.Model
         public string Name { get; set; }
         [Required]
         public string Description { get; set; }
+        public DateTime Date { get; set; } //<-----
     }
 }
